@@ -1,0 +1,8 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Military Total <= 2078226.5\ngini = 0.433\nsamples = 41\nvalue = [28, 13]\nclass = Unified"] ;
+1 [label="gini = 0.482\nsamples = 32\nvalue = [19, 13]\nclass = Unified"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.0\nsamples = 9\nvalue = [9, 0]\nclass = Unified"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}

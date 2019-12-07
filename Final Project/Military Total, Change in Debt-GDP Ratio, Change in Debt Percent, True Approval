@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Military Total <= 2078226.5\ngini = 0.433\nsamples = 41\nvalue = [28, 13]\nclass = Unified"] ;
+1 [label="Change in Debt Percent <= 0.062\ngini = 0.482\nsamples = 32\nvalue = [19, 13]\nclass = Unified"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Military Total <= 1364664.5\ngini = 0.165\nsamples = 11\nvalue = [10, 1]\nclass = Unified"] ;
+1 -> 2 ;
+3 [label="True Approval <= 18.257\ngini = 0.5\nsamples = 2\nvalue = [1, 1]\nclass = Unified"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = Unified"] ;
+3 -> 4 ;
+5 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = Divided"] ;
+3 -> 5 ;
+6 [label="gini = 0.0\nsamples = 9\nvalue = [9, 0]\nclass = Unified"] ;
+2 -> 6 ;
+7 [label="Change in Debt/GDP Ratio <= 0.015\ngini = 0.49\nsamples = 21\nvalue = [9, 12]\nclass = Divided"] ;
+1 -> 7 ;
+8 [label="gini = 0.0\nsamples = 8\nvalue = [0, 8]\nclass = Divided"] ;
+7 -> 8 ;
+9 [label="Change in Debt/GDP Ratio <= 0.065\ngini = 0.426\nsamples = 13\nvalue = [9, 4]\nclass = Unified"] ;
+7 -> 9 ;
+10 [label="Change in Debt/GDP Ratio <= 0.025\ngini = 0.298\nsamples = 11\nvalue = [9, 2]\nclass = Unified"] ;
+9 -> 10 ;
+11 [label="gini = 0.5\nsamples = 4\nvalue = [2, 2]\nclass = Unified"] ;
+10 -> 11 ;
+12 [label="gini = 0.0\nsamples = 7\nvalue = [7, 0]\nclass = Unified"] ;
+10 -> 12 ;
+13 [label="gini = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = Divided"] ;
+9 -> 13 ;
+14 [label="gini = 0.0\nsamples = 9\nvalue = [9, 0]\nclass = Unified"] ;
+0 -> 14 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}

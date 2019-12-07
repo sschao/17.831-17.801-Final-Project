@@ -1,0 +1,12 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="True Approval <= 19.028\ngini = 0.444\nsamples = 42\nvalue = [28, 14]\nclass = Unified"] ;
+1 [label="gini = 0.0\nsamples = 7\nvalue = [7, 0]\nclass = Unified"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="True Approval <= 27.869\ngini = 0.48\nsamples = 35\nvalue = [21, 14]\nclass = Unified"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="gini = 0.219\nsamples = 8\nvalue = [1, 7]\nclass = Divided"] ;
+2 -> 3 ;
+4 [label="gini = 0.384\nsamples = 27\nvalue = [20, 7]\nclass = Unified"] ;
+2 -> 4 ;
+}

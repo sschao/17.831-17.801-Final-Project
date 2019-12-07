@@ -1,0 +1,8 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Change in Debt Percent <= 0.061\ngini = 0.444\nsamples = 42\nvalue = [28, 14]\nclass = Unified"] ;
+1 [label="gini = 0.153\nsamples = 12\nvalue = [11, 1]\nclass = Unified"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.491\nsamples = 30\nvalue = [17, 13]\nclass = Unified"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
